@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Data Villa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+
+  <!-- CSS Part -->
+  <style>
+    
+    .carousel-inner > .item > img
+    .carousel-inner > .item > a > img{
+     width:100%;
+    }
+
+    .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+    }
+
+    .affix + .container-fluid{
+      padding-top: 70px;
+    }
+
+    #btm1:hover{
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+    }
+
+    #btm2:hover{
+      filter: alpha(opacity=70);
+      opacity: 0.7;
+    }
+
+    #btm3:hover{
+      filter: alpha(opacity=70);
+      opacity: 0.7;
+    }
+
+    a{
+    text-decoration: none !important;
+    }
+
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+  <!-- Header Section -->
+  <div id="section1">
+  <div class="container-fluid">
+  	<div class="jumbotron">
+      <div id="hd">
+        <h1 style="font-family:monospace;"><a href="index.html" style="text-decoration: none; color: black;">Data Villa</a></h1>
+      </div>
+
+  		<!-- Login Icon and Dropdown -->
+  		<ul class="nav navbar-nav navbar-right">
+  			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-weight: bold;"><h4 style="margin-top:-25px; color:#595959"><span class="glyphicon glyphicon-log-in"> Login</span></h4></a>
+  			<!-- Login Form -->
+  			<div class="dropdown-menu" style="min-width:300px;">
+
+          <!-- login name -->
+          <form id="formLogin" class="form container-fluid">
+              <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" class="form-control" id="usr" name="usr_name" placeholder="Username or Email">
+              </div>
+              </div>
+
+        <div class="form-group">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input type="password" class="form-control" id="pwd" name="password" placeholder="Password">
+              </div>
+              </div>
+
+              <div class="checkbox">
+                <label><input type="checkbox">Remember me</label>
+              </div>
+
+              <button type="button" id="btnLogin" class="btn btn-block">Login</button>
+           
+            </form>
+            
+            <div class="container-fluid">
+              <br>
+              <a class="small" href="#">Forgot password?</a>
+            </div> 
+            <!-- Sign Up -->
+            <div class="container-fluid">
+              <br>
+              <a href="#" style="color:#595959;"><span class="glyphicon glyphicon-user"></span><span>I'm New</span></a>
+
+            </div>
+          </li>
+  		</ul>
+  	</div>
+  </div>
+
+  <!-- Navigation Bar -->
+  
+  <div class="container-fluid" style="margin-top:-25px;">
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynb">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+
+      <div>
+    <div class="collapse navbar-collapse" id="mynb">
+      <ul class="nav navbar-nav" style="font-weight: bold;">
+        <li><a href="#section1"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="#section2">MP 3</a></li>
+        <li><a href="#section3">Videos</a></li>
+        <li><a href="#section4">Movies</a></li>
+        <li><a href="#section5">TV/Web Series</a></li>
+        <li><a href="#section6">Infotainment</a></li>         
+      </ul>
+
+    </div>
+    
+  </div>
+   </nav>
+
+   <!-- Section1 Home -->
+
+   <div class="container-fluid">
+     
+     <!-- Carousel -->
+     <div class="container">
+    <br>
+    <div id="myCr" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+        <li data-target="#myCr" data-slide-to="0" class="active"></li>
+        <li data-target="#myCr" data-slide-to="1"></li>
+        <li data-target="#myCr" data-slide-to="2"></li>
+        <li data-target="#myCr" data-slide-to="3"></li>
+        <li data-target="#myCr" data-slide-to="4"></li>
+      </ol>
+    
+
+      <div class="carousel-inner" role="listbox" style="height: 400px;">
+        
+        <div class="item active">
+          <img src="kfp.jpg" alt="DataVilla" style="width: 100%; height: 400px;">
+          <div class="carousel-caption">
+            <h3 style="font-family: cursive;">ANIMATED</h3>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="cr1.jpg" alt="DataVilla" style="width: 100%; height: 400px;">
+          <div class="carousel-caption">
+            <h3 style="font-family: cursive;">Songs</h3>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="friends.jpg" alt="DataVilla" style="width: 100%; height: 400px;">
+          <div class="carousel-caption">
+            <h3 style="font-family: cursive;">TV Shows</h3>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="avengers.jpg" alt="DataVilla" style="width: 100%; height: 400px;">
+          <div class="carousel-caption">
+            <h3 style="font-family: cursive;">MOVIES</h3>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="cr2.jpg" alt="DataVilla" style="width: 100%; height: 400px;">
+          <div class="carousel-caption">
+            <h3 style="font-family: cursive;">Web Series</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="left carousel-control" href="#myCr" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCr" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+   </div>
+   </div>
+
+  <!-- Section2 MP3 -->
+
+  <div id="section2" class="container-fluid">
+    <div class="jumbotron" style="margin-top: 35px;">
+      
+    <h2><span class="glyphicon glyphicon-headphones"> .mp3</span></h2>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">Muskurane(City Light)</h6>
+          <audio controls>
+           <source src="Muskurane.mp3" type="audio/mpeg">
+         </audio>
+        </div>
+
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">Main Rahoon Yaa Naa Rahoon</h6>
+          <audio controls>
+           <source src="Main Rahoon Ya Na Rahoon - MyMp3Song.Com.mp3" type="audio/mpeg">
+         </audio>
+        </div>
+
+        <div class="col-md-4">
+        <h6 style="font-family: monospace;">Mitti Di Khusboo</h6>
+          <audio controls>
+           <source src="Mitti Di Khushboo - Ayushmann Khurrana 320KBPS.mp3" type="audio/mpeg">
+         </audio>
+        </div>
+
+    </div>
+
+    <br><br><br>
+
+    <div class="row">
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">ZNMD(Poetry)</h6>
+          <audio controls>
+           <source src="zindagi_na_milegi_dobara_all_poetry_farhan_akhtar_searchallm.mp3" type="audio/mpeg">
+         </audio>
+        </div>
+
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">Jeena Jeena(Badlapur)</h6>
+          <audio controls>
+           <source src="Jeena_Jeena(wapking.cc).mp3" type="audio/mpeg">
+         </audio>
+        </div>
+
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">High Heels(Yo Yo Honey Singh)</h6>
+          <audio controls>
+           <source src="high_heels.mp3" type="audio/mpeg">
+         </audio>
+        </div>
+
+    </div>
+
+       <br><br><h6 style="font-family: monospace; text-align: center;"> For More Click Here</h6>
+
+  </div>
+  </div>
+
+  <!--Section3 Videos -->
+
+  <div id="section3" class="container-fluid">
+    <div class="jumbotron" style="margin-top: 35px;">
+      
+      <h2><span class="glyphicon glyphicon-play"> Video</span></h2>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">Ek Ajnabi Haseena(DoublemintAd)</h6>
+          <div class="embed-responsive embed-responsive-16by9">
+            <video class="myvideo" poster="dmscr.jpg" class="embed-responsive item" src="Doublemint - Story Based TVC-kwFGwYeK0nE.mp4" allowfullscreen></video>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">Main Rahoon Ya Na Rahoon</h6>
+          <div class="embed-responsive embed-responsive-16by9">
+            <video class="myvideo" poster="mrynr.jpg" class="embed-responsive item" src="Main Rahoon Ya Na Rahoon Full Video - Emraan Hashmi, Esha Gupta - Amaal Mallik, Armaan Malik.mp4" allowfullscreen></video>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">Allah Veh(Coke Studio)</h6>
+          <div class="embed-responsive embed-responsive-16by9">
+            <video class="myvideo" poster="allscr.jpg" class="embed-responsive item" src="'Allah Veh' - Manj Musik, Raftaar & Jashan Singh - Coke Studio@MTV Season 4_HD.mp4" allowfullscreen></video>
+          </div>
+        </div>
+
+      </div>
+
+      <br><br><br>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">Side to Side(Ariana Grande ft. Nicki Minaj)</h6>
+          <div class="embed-responsive embed-responsive-16by9">
+            <video class="myvideo" poster="ariscr.jpg" class="embed-responsive item" src="Ariana Grande - Side To Side ft. Nicki Minaj.mp4" allowfullscreen></video>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">Tu Kisi Rail Si</h6>
+          <div class="embed-responsive embed-responsive-16by9">
+            <video class="myvideo" class="embed-responsive item" src="Tu Kisi Rail Si - Masaan _ Vicky Kaushal & Shweta Tripathi _ Indian Ocean _ Swanand Kirkire.mp4" allowfullscreen></video>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h6 style="font-family: monospace;">Worth It(Fifth Harmony ft. Kid Ink)</h6>
+          <div class="embed-responsive embed-responsive-16by9">
+            <video class="myvideo" poster="wiscr.jpg" class="embed-responsive item" src="Fifth Harmony - Worth It ft. Kid Ink.mp4" allowfullscreen></video>
+          </div>
+        </div>
+
+      </div>
+
+      <br><br><h6 style="font-family: monospace; text-align: center;"> For More Click Here</h6>
+
+    </div>
+  </div>
+
+
+  <!--Section4 Movies-->
+
+  <div id="section4" class="container-fluid">
+    <div class="jumbotron" style="margin-top: 35px; min-height: 400px;">
+      
+      <h2><span class="glyphicon glyphicon-film"> Movies</span></h2>
+
+      <br>
+
+      <ul style="font-weight: bolder;">
+        
+        <a data-toggle="collapse" data-parent="#section4" href="#collapse1"><h4 style="color: #333333;"><li class="glyphicon glyphicon-folder-open"> Hollywood</li></h4></a>
+          <ul id="collapse1" class="collapse collapse-in"><br>
+            <li class="glyphicon glyphicon-eye-open"> Watch Online</li><br><br>
+            <li class="glyphicon glyphicon-download"> Download</li>
+          </ul><br>
+
+        <a data-toggle="collapse" data-parent="#section4" href="#collapse2"><h4 style="color: #333333;"><li class="glyphicon glyphicon-folder-open"> Bollywood</li></h4></a>
+          <ul id="collapse2" class="collapse collapse-in"><br>
+            <li class="glyphicon glyphicon-eye-open"> Watch Online</li><br><br>
+            <li class="glyphicon glyphicon-download"> Download</li>
+          </ul><br>
+
+        <a href="#" data-toggle="modal" data-target="#alrt"><h4 style="color: #333333;"><li class="glyphicon glyphicon-folder-open"> Animated</li></h4></a>
+        <div id="alrt" class="modal fade" role="dialog" style="padding-top: 30px;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title" style="text-align:center; font-family: monospace; font-weight: bolder;">&hearts; Cool &#128525;</h3>
+              </div>
+                <div class="modal-body">
+                <h4 style="font-family: monospace;">We share same Interest &hearts;</h4>
+              </div>
+              <div class="modal-footer">
+                <button href="#" data-toggle="tooltip" title="Download" type="button" class="btn btn-default btn-lg" data-dismiss="modal"><span class="glyphicon glyphicon-download-alt"></span></button>
+                <button href="#" data-toggle="tooltip" title="Watch Online" type="button" class="btn btn-default btn-lg" data-dismiss="modal"><span class="glyphicon glyphicon-eye-open"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </ul>
+
+    </div>
+  </div>
+
+
+  <!--Section5 TVWEB-->
+
+  <div id="section5" class="container-fluid">
+    <div class="jumbotron" style="margin-top: 35px; min-height: 400px;">
+      
+      <h2><span class="glyphicon glyphicon-blackboard"> TV Shows & Web Series</span></h2>
+
+      <br>
+
+      <h4 style="font-family: monospace; color: #4d4d4d">***Due to Privacy Terms of the owner or Copyright Issue, It is WARNED that any substance you are downloading in this section are downloaded on your own risk. Website will not be responsible for any Legal Issue***</h4><br><br>
+
+      <!--Search Box-->
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h4 style="font-family: monospace; font-weight: bold; text-align: center;">Search</h4><br>
+
+          <form>
+           <div class="input-group">
+             <input type="text" href="#" class="form-control" name="search" placeholder="Search for your favourite TV Shows and Web Series"SS style="width:100%; align-content: center;">
+             <div class="input-group-btn">
+               <button class="btn btn-default" type="submit">
+                 <i class="glyphicon glyphicon-search"></i>
+               </button>
+             </div>
+           </div> 
+          </form>
+
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--Section6 Infotainment-->
+
+  <div id="section6" class="container-fluid">
+    <div class="jumbotron" style="margin-top: 35px;">
+      
+    <h2><span class="glyphicon glyphicon-globe"> Infotainment</span></h2>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h6 style="font-family: monospace;">Moon Shot</h6>
+        <div class="embed-responsive embed-responsive-16by9">
+        <video class="myvideo" class="embed-responsive item" src="Moon Shot _ Episode 9 _ Race for the Prize.mp4" allowfullscreen></video>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h6 style="font-family: monospace;">Facebook Data Center</h6>
+        <div class="embed-responsive embed-responsive-16by9">
+        <video class="myvideo" class="embed-responsive item" src="Facebook Data Center.mp4" allowfullscreen></video>
+        </div>
+      </div>
+    </div><br><br><br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h6 style="font-family: monospace;">Code Girl(Hindi Subtitle)</h6>
+        <div class="embed-responsive embed-responsive-16by9">
+        <video class="myvideo" class="embed-responsive item" src="CODEGIRL - Hindi.mp4" allowfullscreen></video>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h6 style="font-family: monospace;">Google Data Center</h6>
+        <div class="embed-responsive embed-responsive-16by9">
+        <video class="myvideo" class="embed-responsive item" src="Inside a Google data center.mp4" allowfullscreen></video>
+        </div>
+      </div>
+    </div>
+
+      <br><br><br><h6 style="font-family: monospace; text-align: center;"> For More Click Here</h6>
+
+  </div>
+  </div>
+
+
+  <!--Footer-->
+
+  <div class="footer" style="background-color: #b3b3b3; width: 100%; height:150px;">      
+        
+        <h6 style="font-family: monospace; font-weight: bolder; margin-left: 30px; padding-top: 20px;">Join Us:</h6>
+        
+      <div style="margin-left: 30px; display: inline-block;">  
+        
+        <a href="#"><img id="btm1" src="fbicon.jpg" style="width: 50px; height: 50px;"></a>
+        
+        <a href="#"><img id="btm2" src="twittericon.jpg" style="width: 38px; height: 38px;"></a>
+        
+        <a href="#"><img id="btm3" src="instcon.jpg" style="width: 35px; height: 35px; margin-left: 8px;"></a>
+
+      </div>
+
+      <div style="text-align: right; margin-right: 30px;">
+        <h5 style="font-family: monospace;">A <a href="#"><span style="color:black; font-weight: bolder; font-family: cursive;">x-Computers</span></a> Product</h5>
+      </div>
+  
+  </div>
+
+
+<!-- End Part -->
+
+<!--Scrolling Script-->
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#mynb a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+
+//Video Controls
+$(".myvideo").hover(function(event){
+  if(event.type === "mouseenter"){
+    $(this).attr("controls","");
+  }else if(event.type === "mouseleave"){
+    $(this).removeAttr("controls");
+  }
+});
+
+</script>
+
+</body>
+
+</html>
